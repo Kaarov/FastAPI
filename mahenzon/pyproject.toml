@@ -16,6 +16,8 @@ aiosqlite = "^0.20.0"
 pydantic-settings = "^2.4.0"
 alembic = "^1.13.2"
 pyjwt = {extras = ["crypto"], version = "^2.9.0"}
+bcrypt = "^4.2.0"
+python-multipart = "^0.0.9"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
