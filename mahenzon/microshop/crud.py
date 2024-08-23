@@ -5,7 +5,7 @@ from sqlalchemy.engine import Result
 from sqlalchemy.orm import joinedload, selectinload
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from core.models import (
+from microshop.core import (
     db_helper,
     User,
     Profile,

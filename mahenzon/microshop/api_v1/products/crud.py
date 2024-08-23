@@ -3,9 +3,9 @@ from typing import Optional, Union
 from sqlalchemy import select
 from sqlalchemy.engine import Result
 from sqlalchemy.ext.asyncio import AsyncSession
-from core.models import Product
+from microshop.core import Product
 
-from .schemas import ProductCreate, ProductUpdate, ProductPartial
+from microshop.api_v1.products.schemas import ProductCreate, ProductUpdate, ProductPartial
 
 
 async def get_products(session: AsyncSession) -> list[Product]:

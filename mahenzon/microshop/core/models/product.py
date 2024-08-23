@@ -2,11 +2,10 @@ from typing import TYPE_CHECKING
 
 from sqlalchemy.orm import Mapped, relationship
 
-from .base import Base
+from microshop.core.models.base import Base
 
 if TYPE_CHECKING:
-    from .order import Order
-    from .order_product_association import OrderProductAssociation
+    pass
 
 
 class Product(Base):

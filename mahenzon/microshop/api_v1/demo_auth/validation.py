@@ -6,7 +6,7 @@ from fastapi import (
 )
 from fastapi.security import OAuth2PasswordBearer
 
-from api_v1.demo_auth.helpers import (
+from microshop.api_v1.demo_auth.helpers import (
     TOKEN_TYPE_FIELD,
     ACCESS_TOKEN_TYPE,
     REFRESH_TOKEN_TYPE,
@@ -14,7 +14,7 @@ from api_v1.demo_auth.helpers import (
 from auth import utils as auth_utils
 from users.schemas import UserSchema
 
-from api_v1.demo_auth.crud import user_db
+from microshop.api_v1.demo_auth.crud import user_db
 
 oauth2_bearer = OAuth2PasswordBearer(
     tokenUrl="/api/v1/demo_auth/jwt/login/",

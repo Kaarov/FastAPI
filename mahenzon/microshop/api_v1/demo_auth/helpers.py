@@ -1,7 +1,7 @@
 from datetime import timedelta
 
 from auth import utils as auth_utils
-from core.config import settings
+from microshop.core import settings
 from users.schemas import UserSchema
 
 

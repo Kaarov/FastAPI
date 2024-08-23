@@ -8,12 +8,12 @@ from fastapi import (
 from fastapi.security import HTTPBearer
 from pydantic import BaseModel
 
-from api_v1.demo_auth.crud import user_db
-from api_v1.demo_auth.helpers import (
+from microshop.api_v1.demo_auth.crud import user_db
+from microshop.api_v1.demo_auth.helpers import (
     create_access_token,
     create_refresh_token,
 )
-from api_v1.demo_auth.validation import (
+from microshop.api_v1.demo_auth.validation import (
     get_current_token_payload,
     get_current_auth_user,
     get_current_auth_user_for_refresh,

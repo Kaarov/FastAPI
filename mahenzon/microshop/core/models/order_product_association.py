@@ -1,14 +1,13 @@
 from typing import TYPE_CHECKING
 
-from sqlalchemy import Table, ForeignKey, Column, Integer, UniqueConstraint
+from sqlalchemy import ForeignKey, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from .base import Base
+from microshop.core.models.base import Base
 
 
 if TYPE_CHECKING:
-    from .order import Order
-    from .product import Product
+    pass
 
 
 class OrderProductAssociation(Base):

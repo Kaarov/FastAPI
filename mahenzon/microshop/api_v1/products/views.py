@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette import status
 
-from core.models import db_helper
+from microshop.core import db_helper
 from . import crud
-from .dependencies import product_by_id
-from .schemas import Product, ProductCreate, ProductUpdate, ProductPartial
+from microshop.api_v1.products.dependencies import product_by_id
+from microshop.api_v1.products.schemas import Product, ProductCreate, ProductUpdate, ProductPartial
 
 router = APIRouter(tags=["products"])
 
