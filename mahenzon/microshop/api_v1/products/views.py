@@ -5,7 +5,12 @@ from starlette import status
 from microshop.core import db_helper
 from . import crud
 from microshop.api_v1.products.dependencies import product_by_id
-from microshop.api_v1.products.schemas import Product, ProductCreate, ProductUpdate, ProductPartial
+from microshop.api_v1.products.schemas import (
+    Product,
+    ProductCreate,
+    ProductUpdate,
+    ProductPartial,
+)
 
 router = APIRouter(tags=["products"])
 
