@@ -1,0 +1,10 @@
+services:
+  pg:
+    image: postgres:12.0-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_DB: shop
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
