@@ -4,8 +4,8 @@ from fastapi_users.db import (
 )
 
 from .base import Base
-from .mixins.id_int_pk import IdIntPKMixin
+from .mixins.id_int_pk import IdIntPkMixin
 
 
-class User(Base, IdIntPKMixin, SQLAlchemyBaseUserTable[int]):
+class User(Base, IdIntPkMixin, SQLAlchemyBaseUserTable[int]):
     pass
