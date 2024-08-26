@@ -4,7 +4,7 @@ from fastapi import Depends
 
 from core.authentication.user_manager import UserManager
 
-from .users import get_users_db
+from api.dependencies.authentication.users import get_users_db
 
 if TYPE_CHECKING:
     from fastapi_users_db_sqlalchemy import SQLAlchemyUserDatabase

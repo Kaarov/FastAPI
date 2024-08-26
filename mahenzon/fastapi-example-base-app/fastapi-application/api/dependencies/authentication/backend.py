@@ -1,6 +1,6 @@
 from fastapi_users.authentication import AuthenticationBackend
 
-from .strategy import get_database_strategy
+from api.dependencies.authentication.strategy import get_database_strategy
 from core.authentication.transport import bearer_transport
 
 authentication_backend = AuthenticationBackend(
