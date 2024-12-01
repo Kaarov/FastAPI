@@ -16,4 +16,4 @@ def home():
 
 # === 3 способ ===
 # if __name__ == "__main__":
-#     uvicorn.run("1run_fastapi:app", reload=True)
+#     uvicorn.run("main:app", reload=True)
