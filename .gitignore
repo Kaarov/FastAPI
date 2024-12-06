@@ -93,3 +93,5 @@ ENV/
 .idea/
 .vscode
 certs/
+
+*.db
